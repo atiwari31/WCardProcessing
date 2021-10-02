@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+           "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+           "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+
+
+<definition name="welcome" template="/WEB-INF/jsp/index.jsp">
+		<put-attribute name="title" value="Welcome Page" />
+	
+	</definition>
+
+<definition name="dashboard" template="/WEB-INF/jsp/dashboard.jsp">
+		<put-attribute name="title" value="Dashboard Page" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="userprofile" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/userprofile.jsp" />
+	</definition>
+	
+	<definition name="addprofile" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/addprofile.jsp" />
+	</definition>
+	<definition name="viewcustomer" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/viewcustomer.jsp" />
+	</definition>
+	
+	<definition name="addcustomer" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/addcustomer.jsp" />
+	</definition>
+	
+	<definition name="addlicense" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/addlicense.jsp" />
+	</definition>
+	
+	<definition name="viewlicense" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/viewlicense.jsp" />
+	</definition>
+	
+	<definition name="adduser" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/adduser.jsp" />
+	</definition>
+	
+		<definition name="alluser" extends="dashboard">
+		<put-attribute name="body" value="/WEB-INF/jsp/alluser.jsp" />
+	</definition>
+
+
+
+
+</tiles-definitions>
